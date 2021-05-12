@@ -1,14 +1,18 @@
 local function map(mode, lhs, rhs, opts)
-  local options = { noremap = true }
+  local options = {noremap = true}
   if opts then options = vim.tbl_extend('force', options, opts) end
   vim.api.nvim_set_keymap(mode, lhs, rhs, options)
 end
 
+-- <Space> is the new leader.
 map('n', '<Space>', '<NOP>', { silent = true })
+vim.cmd('nnoremap ; :')
 vim.g.mapleader = ' '
 
--- better window movement
-vim.api.nvim_set_keymap('n', '<M-h>', '<C-w>h', {silent = true})
-vim.api.nvim_set_keymap('n', '<M-j>', '<C-w>j', {silent = true})
-vim.api.nvim_set_keymap('n', '<M-k>', '<C-w>k', {silent = true})
-vim.api.nvim_set_keymap('n', '<M-l>', '<C-w>l', {silent = true})
+vim.cmd('let g:tmux_navigator_no_mappings = 1')
+
+map('n', '<C-h>', ':TmuxNavigateLeft<CR>', {silent=true})
+map('n', '<C-l>', ':TmuxNavigateRight<CR>', {silent=true})
+map('n', '<C-k>', ':TmuxNavigateUp<CR>', {silent=true})
+map('n', '<C-j>', ':TmuxNavigateDown<CR>', {silent=true})
+map('n', '<M-h>', ':TmuxNavigatePrevious<CR>', {silent=true})
