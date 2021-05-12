@@ -25,7 +25,7 @@ local function setup_servers()
   require'lspinstall'.setup()
   local servers = require'lspinstall'.installed_servers()
   for _, server in pairs(servers) do
-		local configs = require('config.lsps')
+		local configs = Lotus.Utils.get_lsp_configs()
 		local config = make_config()
 
 		if configs[server] then

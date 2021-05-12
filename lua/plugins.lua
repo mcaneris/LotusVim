@@ -51,7 +51,6 @@ function(use)
 	use 'glepnir/dashboard-nvim'
 	use 'romgrk/barbar.nvim'
 	use 'kyazdani42/nvim-web-devicons'
-	--use 'onsails/lspkind-nvim'
 	use 'folke/which-key.nvim'
 	use 'lewis6991/gitsigns.nvim'
 	use 'joshdick/onedark.vim'
