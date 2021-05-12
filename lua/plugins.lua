@@ -32,8 +32,9 @@ function(use)
 		requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}
 	}
 
-	-- TMUX Integration
+	-- Integrations
 	use 'christoomey/vim-tmux-navigator'
+	use 'kdheepak/lazygit.nvim'
 
 	-- Syntax
 	use 'hrsh7th/nvim-compe'

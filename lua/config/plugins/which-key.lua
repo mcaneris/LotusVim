@@ -42,6 +42,10 @@ wk.register({
 			},
 			x = {':LspTroubleToggle<cr>', 'LSP Trouble'}
 		},
+		g = {
+			name = '+ Git',
+			l = {':LazyGit<CR>', 'Lazy Git'}
+		},
 		s = {
 		  name = '+ Search',
 			s = {'g#', 'Search Forward'},
