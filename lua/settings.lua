@@ -5,6 +5,8 @@ vim.cmd('filetype plugin indent on')
 vim.cmd('colorscheme ' .. O.colorscheme)
 vim.cmd('hi EndOfBuffer guifg=bg')
 
+vim.cmd('set noswapfile')
+
 -- Auto Commands
 vim.cmd('au BufRead,BufNewFile *.ex,*.exs set filetype=elixir')
 vim.cmd('au BufRead,BufNewFile *.eex set filetype=eelixir')

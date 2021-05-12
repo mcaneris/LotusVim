@@ -38,7 +38,7 @@ function(use)
 
 	-- Syntax
 	use 'hrsh7th/nvim-compe'
-
+	use {'prettier/vim-prettier', run = 'yarn install'}
   use 'hrsh7th/vim-vsnip'
 	use 'rafamadriz/friendly-snippets'
 	use 'glepnir/lspsaga.nvim'

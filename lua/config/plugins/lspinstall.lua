@@ -28,8 +28,8 @@ local function setup_servers()
 		local configs = Lotus.Utils.get_lsp_configs()
 		local config = make_config()
 
-		if configs[server] then
-			config = merge_configs(config, configs[server])
+		if configs[server .. '-ls'] then
+			config = merge_configs(config, configs[server .. '-ls'])
 		end
 
     require'lspconfig'[server].setup(config)
