@@ -6,7 +6,7 @@ end
 
 local ls = function(path)
 	local list = {}
-  for f in lfs.dir(path) do if is_file(f) then table.insert(list, f) end end
+  for f in lfs.dir(vim.fn.stdpath('config') .. path) do if is_file(f) then table.insert(list, f) end end
 	return list
 end
 
@@ -15,14 +15,15 @@ local strip_extension = function(filename)
 end
 
 local require_plugin_configs = function()
-	for _,f in ipairs(ls('./lua/config/plugins')) do
-		require('config.plugins.' .. strip_extension(f))
+	for _,f in ipairs(ls('/lua/config/plugins')) do
+		local name = strip_extension(f)
+		require('config.plugins.' .. name)
 	end
 end
 
 local get_lsp_configs = function()
 	local configs = {}
-	for _,f in ipairs(ls('./lua/config/lsps')) do
+	for _,f in ipairs(ls('/lua/config/lsps')) do
 		local name = strip_extension(f)
 		configs[name] = require('config.lsps.' .. name)
 	end
