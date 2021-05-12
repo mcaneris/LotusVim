@@ -2,7 +2,7 @@
 
 ![Lotus Vim](https://github.com/mcaneris/LotusVim/blob/main/screen.png "Lotus Vim")
 
-Neovim configuration files with fully in Lua with LSP (Language Server Protocol) support.
+Neovim configuration files fully in Lua with LSP (Language Server Protocol) support.
 
 ## Requirements
 - [Neovim Nightly (0.5)](https://github.com/neovim/neovim/releases/tag/nightly)
