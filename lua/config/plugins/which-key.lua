@@ -33,14 +33,14 @@ wk.register({
 				[','] = {':BufferMovePrevious<CR>', 'Move Buffer Left'},
 				['.'] = {':BufferMoveNext<CR>', 'Move Buffer Right'},
 			},
-			d = {'<cmd>LspTroubleToggle lsp_document_diagnostics<CR>', 'Diagnostics'},
+			d = {'<cmd>TroubleToggle lsp_document_diagnostics<CR>', 'Diagnostics'},
 			s = {':StripWhitespace<CR>', 'Strip Whitespace'},
 			w = {':BufferClose<CR>', 'Close Buffer'},
 			W = {':BufferCloseAllButCurrent<CR>', 'Close All Other Buffers'},
 		},
 		w = {
 			name = '+ Workspace',
-			d = {'<cmd>LspTroubleToggle lsp_workspace_diagnostics<CR>', 'Diagnostics'},
+			d = {'<cmd>TroubleToggle lsp_workspace_diagnostics<CR>', 'Diagnostics'},
 		},
 		f = {
 			name = '+ File',

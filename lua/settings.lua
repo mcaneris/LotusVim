@@ -33,6 +33,7 @@ vim.bo.smartindent = true -- makes indenting smart
 vim.api.nvim_set_option('termguicolors', true)
 vim.api.nvim_set_option('mouse', 'a')
 vim.cmd('set guicursor=a:blinkon1')
+vim.cmd('let g:onedark_termcolors=16')
 vim.api.nvim_set_option('fileencoding', 'utf-8')
 vim.api.nvim_set_option('splitright', true)
 vim.api.nvim_set_option('ignorecase', true)

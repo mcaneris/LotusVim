@@ -121,7 +121,7 @@ gls.right[1] = {
 			end
 			return true
 		end,
-		icon = ' LSP:',
+		icon = '  ',
 		highlight = {colors.cyan,colors.bg,'bold'},
 		separator = ' ',
 		separator_highlight = {'NONE',colors.bg}
@@ -170,7 +170,7 @@ gls.right[6] = {
 	DiffAdd = {
 		provider = 'DiffAdd',
 		condition = condition.hide_in_width,
-		icon = '  ',
+		icon = '   ',
 		highlight = {colors.green,colors.bg},
 	}
 }
@@ -178,7 +178,7 @@ gls.right[7] = {
 	DiffModified = {
 		provider = 'DiffModified',
 		condition = condition.hide_in_width,
-		icon = ' 柳',
+		icon = '  柳',
 		highlight = {colors.orange,colors.bg},
 	}
 }
@@ -186,7 +186,7 @@ gls.right[8] = {
 	DiffRemove = {
 		provider = 'DiffRemove',
 		condition = condition.hide_in_width,
-		icon = '  ',
+		icon = '   ',
 		highlight = {colors.red,colors.bg},
 	}
 }
