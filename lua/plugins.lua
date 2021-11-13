@@ -26,6 +26,7 @@ function(use)
 
 	-- Explorer
 	use 'kyazdani42/nvim-tree.lua'
+	use 'kyazdani42/nvim-web-devicons'
 
 	use {
 		'nvim-telescope/telescope.nvim',
@@ -39,7 +40,7 @@ function(use)
 	-- Syntax
 	use 'hrsh7th/nvim-compe'
 	use {'prettier/vim-prettier', run = 'yarn install'}
-  use 'hrsh7th/vim-vsnip'
+    use 'hrsh7th/vim-vsnip'
 	use 'rafamadriz/friendly-snippets'
 	use 'glepnir/lspsaga.nvim'
 	use 'ntpeters/vim-better-whitespace'
@@ -51,10 +52,9 @@ function(use)
 	-- UI
 	use 'glepnir/dashboard-nvim'
 	use 'romgrk/barbar.nvim'
-	use 'kyazdani42/nvim-web-devicons'
 	use 'folke/which-key.nvim'
 	use 'lewis6991/gitsigns.nvim'
-	use 'joshdick/onedark.vim'
+	use 'projekt0n/github-nvim-theme'
 	use {
 		'glepnir/galaxyline.nvim',
 		branch = 'main',

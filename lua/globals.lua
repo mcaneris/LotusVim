@@ -1,7 +1,7 @@
 O = {
 	auto_close_tree = 1,
 	auto_complete = true,
-	colorscheme = 'onedark',
+	colorscheme = 'github_dimmed',
 	hidden_files = true,
 	gui_font = "FiraCode Nerd Font:h17",
 	number = true,
