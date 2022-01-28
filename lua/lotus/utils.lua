@@ -25,7 +25,7 @@ local function prequire(m)
 end
 
 local require_plugin_configs = function()
-	for k,v in ipairs(ls('/lua/config/plugins')) do
+	for _,v in ipairs(ls('/lua/config/plugins')) do
 		if v then
 			local name = strip(v, '(.lua)')
 			require('config.plugins.' .. name)

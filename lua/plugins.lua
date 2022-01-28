@@ -61,7 +61,7 @@ function(use)
 	use 'romgrk/barbar.nvim'
 	use 'folke/which-key.nvim'
 
-	use { 
+	use {
 		'lewis6991/gitsigns.nvim',
 		requires = { 'nvim-lua/plenary.nvim' }
 	}
