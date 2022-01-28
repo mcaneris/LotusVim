@@ -74,7 +74,7 @@ gls.left[7] = {
 		separator_highlight = {nil,colors.bg}
 	}
 }
-
+--[[
 gls.left[8] = {
 	DiagnosticError = {
 		provider = 'DiagnosticError',
@@ -110,6 +110,7 @@ gls.left[11] = {
 		separator_highlight = {nil,colors.bg}
 	}
 }
+]]--
 
 gls.right[1] = {
 	ShowLspClient = {
