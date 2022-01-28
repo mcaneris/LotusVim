@@ -51,10 +51,10 @@ function(use)
 	-- Integrations
 	use 'kdheepak/lazygit.nvim'
 
-	-- use { 'prettier/vim-prettier', run = 'yarn install' }
+	use { 'prettier/vim-prettier', run = 'yarn install' }
 
 	use 'tami5/lspsaga.nvim'
-	-- use 'ntpeters/vim-better-whitespace'
+	use 'ntpeters/vim-better-whitespace'
 
 	-- UI
 	use 'glepnir/dashboard-nvim'

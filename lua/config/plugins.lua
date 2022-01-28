@@ -12,6 +12,7 @@ local plugins = {
 	"nvim-treesitter",
 	"telescope",
 	"trouble",
+	"vim-better-whitespace"
 }
 
 for _, plugin in pairs(plugins) do
