@@ -18,6 +18,12 @@ local strip = function(string, sub)
 	return string:gsub(sub, '')
 end
 
+local function prequire(m)
+  local ok, err = pcall(require, m)
+  if not ok then return nil, err end
+  return err
+end
+
 local require_plugin_configs = function()
 	for k,v in ipairs(ls('/lua/config/plugins')) do
 		if v then
@@ -38,7 +44,9 @@ local get_lsp_configs = function()
 	return configs
 end
 
+
 return {
+	prequire = prequire,
 	ls = ls,
 	get_lsp_configs = get_lsp_configs,
 	require_plugin_configs = require_plugin_configs,
