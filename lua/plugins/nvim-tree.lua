@@ -6,3 +6,5 @@ vim.g.nvim_tree_icons = {
 	git = { unstaged = "", staged = "✓", unmerged = "", renamed = "➜", untracked = "" },
 	folder = { default = "", open = "", empty = "", empty_open = "", symlink = "" }
 }
+
+return {}

@@ -12,10 +12,11 @@ vim.api.nvim_exec(
 	true
 )
 
-require("plugins")
+require("packages")
 require("lotus")
 require("globals")
 require("settings")
 
-require("config.plugins")
-require("config.lsps")
+require("plugins")
+require("lsps")
+

@@ -68,6 +68,7 @@ if wk then
 				f = { "<cmd>Telescope find_files<CR>", "Find" },
 				r = { "<cmd>Telescope oldfiles<CR>", "Recent" },
 				g = { "<cmd>Telescope live_grep<CR>", "Grep" },
+				t = { "<cmd>Telescope treesitter<CR>", "Treesitter" },
 				n = { "<cmd>enew<cr>", "New File" },
 			},
 			l = {
@@ -79,6 +80,7 @@ if wk then
 			g = {
 				name = "+ Git",
 				l = { ":LazyGit<CR>", "Lazy Git" },
+				o = { ":Octo<CR>", "Octo" },
 				c = { "<cmd>Telescope git_commits<CR>", "Commits" },
 				["<C-c>"] = { "<cmd>Telescope git_bcommits<CR>", "Commits (Buffer)" },
 				s = { "<cmd>Telescope git_status<CR>", "Status" },
